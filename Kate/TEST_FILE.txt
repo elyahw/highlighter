@@ -30,6 +30,13 @@ this // at end # this // one is
 
 [x]This task is done...
 [x] This task is done...
+[X] also done
+x - This one also done
+X - THis is done
+abc[x] This task is done...
+aaa[X] also done
+bbbx - This one also done
+cccX - THis is done
 [X]
 [X]sa
 
