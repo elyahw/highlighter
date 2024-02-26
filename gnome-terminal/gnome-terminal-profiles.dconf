@@ -1,9 +1,13 @@
+[/]
+default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
+
 [:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-color='rgb(48,10,36)'
+background-color='rgb(23,20,33)'
 bold-color='rgb(235,255,0)'
 bold-color-same-as-fg=false
 bold-is-bright=true
-default-size-columns=100
+default-size-columns=120
 default-size-rows=28
 font='Monospace 13'
 foreground-color='rgb(239,240,241)'
