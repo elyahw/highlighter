@@ -23,7 +23,7 @@
                 <RegExpr attribute="CommentPyQuotes" String="&apos;&apos;&apos;" insensitive="true" context="#pop!Triple Q-string" beginRegion="Triple Q-region"/>
                 
                 <RegExpr attribute="boldSegment"     String="\*\*"               insensitive="true" context="#pop!boldBlock"       beginRegion="boldSegmentBegin"/> <!-- **bold** -->
-<!-- TODO: Try: &#42; -->
+
                 <!-- 2. Single chars or keywords: -->
                 <DetectChar attribute="ColourChar" char="=" context="#stay"/>
                 <DetectChar attribute="ColourChar" char="*" context="#stay"/>
