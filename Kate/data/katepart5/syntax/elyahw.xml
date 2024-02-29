@@ -22,7 +22,9 @@
                 <RegExpr attribute="CommentPyQuotes" String="&quot;&quot;&quot;" insensitive="true" context="#pop!Triple Q-string" beginRegion="Triple Q-region"/>
                 <RegExpr attribute="CommentPyQuotes" String="&apos;&apos;&apos;" insensitive="true" context="#pop!Triple Q-string" beginRegion="Triple Q-region"/>
                 
-                <RegExpr attribute="boldSegment"     String="\*\*"               insensitive="true" context="#pop!boldBlock"       beginRegion="boldSegmentBegin"/> <!-- **bold** -->
+                <!-- bold text copied from markdown.xml -->
+                <RegExpr attribute="Strong Text" context="#pop" minimal="true" String="\*{2}(?:(?:(?:[^\*\s\\]|\\.)(?:[^\\]|\\.)*)?(?:[^\*\s\\]|\\\S)\*{2}|\*{1,3}(?:(?:[^\*\s\\]|\\.)(?:[^\\]|\\.)*)?(?:[^\*\s\\]|\\\S)\*{2}(?!\*))"/>
+                <RegExpr attribute="Strong Text" context="#pop" minimal="true" String="\b_{2}(?:(?:(?:[^_\s\\]|\\.)(?:[^\\]|\\.)*)?(?:[^_\s\\]|\\\S)_{2}|_{1,3}(?:(?:[^_\s\\]|\\.)(?:[^\\]|\\.)*)?(?:[^_\s\\]|\\\S)_{2}(?!_))"/>
 
                 <!-- 2. Single chars or keywords: -->
                 <DetectChar attribute="ColourChar" char="=" context="#stay"/>
@@ -49,12 +51,6 @@
                 <DetectSpaces attribute="CodeSegment"/>
                 <DetectIdentifier attribute="CodeSegment"/>
                 <StringDetect attribute="CodeSegment" String="&#96;" context="#pop" endRegion="codeSegmentBegin"/>
-            </context>
-
-            <context name="boldBlock" attribute="boldSegment" lineEndContext="#pop" noIndentationBasedFolding="true">
-                <DetectSpaces attribute="boldSegment"/>
-                <DetectIdentifier attribute="boldSegment"/>
-                <StringDetect attribute="boldSegment" String="\*\*" context="#pop" endRegion="boldSegmentBegin"/>
             </context>
 
             <!-- Comment lines -->
@@ -109,7 +105,7 @@ b5b5b5 dark grey
     strikeout if true, the text will be struck out.
     spellChecking if true, the text will be spellchecked.
 -->
-            <itemData name="boldSegment" color='#000000' bold="1"/>
+            <itemData name="Strong Text" color='#000000' bold="true"/>
             <itemData name="Comment" color='#008f00'/>
             <itemData name="CommentBlue" color='#1603ff' backgroundColor='#e6f3ff'/>
             <itemData name="CommentBloodRed" color='#de0303'/>
