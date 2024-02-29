@@ -1,3 +1,6 @@
+# To find XML codes:
+https://www.ascii-code.com/
+
 # Sources:
 https://docs.kde.org/stable5/en/kate/katepart/highlight.html#kate-highlight-system-default-styles
 https://docs.kde.org/stable5/en/kate/katepart/color-themes.html

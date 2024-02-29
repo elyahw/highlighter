@@ -28,7 +28,7 @@ this // at end # this // one is
 4
 5643
 
-This is a **bold** segment
+This is a **bold** NOT BOLD NOW segment fdsa *** * ********* ******* **** *** fda fd afd a** fdsa f** dfsa **
 
 [x]This task is done...
 [x] This task is done...
@@ -43,6 +43,8 @@ cccX - THis is done
 [X]sa
 
 """ this is the comment Excellent!!! """
+''' another comment '''
+
 ` fdsa `¬ ¬ ~ ~ ? ? / / ?? ´ ´
 # this is NOT BEING !!!!!!!!!!!!!!!!!!!!!!!!!!!!! ERRORERRORERRERRORE// RRORERRORERERRORERROR
 fdasfda´ ´ ` `

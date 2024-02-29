@@ -20,6 +20,8 @@
                 <!-- 3. Multiple line comments: -->
                 <RegExpr attribute="CodeSegment"     String="&#96;"              insensitive="true" context="#pop!codeBlock"       beginRegion="codeSegmentBegin"/> <!-- `code` -->
                 <RegExpr attribute="CommentPyQuotes" String="&quot;&quot;&quot;" insensitive="true" context="#pop!Triple Q-string" beginRegion="Triple Q-region"/>
+                <RegExpr attribute="CommentPyQuotes" String="&apos;&apos;&apos;" insensitive="true" context="#pop!Triple Q-string" beginRegion="Triple Q-region"/>
+                
                 <RegExpr attribute="boldSegment"     String="\*\*"               insensitive="true" context="#pop!boldBlock"       beginRegion="boldSegmentBegin"/> <!-- **bold** -->
 <!-- TODO: Try: &#42; -->
                 <!-- 2. Single chars or keywords: -->
@@ -40,6 +42,7 @@
                 <DetectSpaces attribute="CommentPyQuotes"/>
                 <DetectIdentifier attribute="CommentPyQuotes"/>
                 <StringDetect attribute="CommentPyQuotes" String="&quot;&quot;&quot;" context="#pop" endRegion="Triple Q-region"/>
+                <StringDetect attribute="CommentPyQuotes" String="&apos;&apos;&apos;" context="#pop" endRegion="Triple Q-region"/>
             </context>
 
             <context name="codeBlock" attribute="CodeSegment" lineEndContext="#stay" noIndentationBasedFolding="true">
