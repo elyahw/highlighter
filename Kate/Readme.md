@@ -5,6 +5,9 @@ https://www.ascii-code.com/
 https://docs.kde.org/stable5/en/kate/katepart/highlight.html#kate-highlight-system-default-styles
 https://docs.kde.org/stable5/en/kate/katepart/color-themes.html
 
+# Paths:
+https://api.kde.org/frameworks/syntax-highlighting/html/
+
 # Files:
 https://kate-editor.org/en-gb/syntax/
 https://invent.kde.org/frameworks/syntax-highlighting/-/tree/master/data?ref_type=heads
